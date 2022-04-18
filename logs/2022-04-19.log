@@ -1,0 +1,7 @@
+time=2022-04-19T01:03:38+08:00 level=info msg=initializing modules ... bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=all modules initialized bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=registering modules serve functions ... bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=all modules serve functions registered bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=starting modules tasks ... bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=tasks running bot=internal
+time=2022-04-19T01:03:38+08:00 level=info msg=请使用手机QQ扫描二维码 (qrcode.png) :  bot=internal
