@@ -80,6 +80,47 @@ learn `keyword` `value`
 keyword
 ```
 
+## 模块拓展开发
+
+module参考[log.go](./modules/logging/log.go)
+
+```go
+package mymodule
+
+import (
+    "aaa"
+    "bbb"
+    "MiraiGo-Template/bot"
+)
+
+var instance *Logging
+
+func init() {
+	instance = &Logging{}
+	bot.RegisterModule(instance)
+}
+
+type Logging struct {
+}
+
+// ...
+```
+
+编写自己的Module后在[app.go](./app.go)中启用Module 
+
+```go
+package main
+
+import (
+    // ...
+    
+    _ "modules/mymodule"
+)
+
+// ...
+```
+
+
 ## 未来将会加上的功能
 
 -  作业通知与超星泛雅对接
