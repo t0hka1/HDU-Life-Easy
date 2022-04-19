@@ -1,4 +1,14 @@
-# HDU-Life-Easy
+<p align="center">
+  <a href="https://ishkong.github.io/go-cqhttp-docs/"><img src="https://s2.loli.net/2022/04/19/Eon8l1Mg7XrqZ93.png" width="200" height="200" alt="go-cqhttp"></a>
+</p>
+
+<div align="center">
+
+# 澪酱-你的生活小助手
+
+_✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[MiraiGo-Template](https://github.com/Logiase/MiraiGo-Template)模块化的开发方式 ✨_
+
+</div>
 
 <p align="center">
   <a href="#">
