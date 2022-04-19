@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ishkong.github.io/go-cqhttp-docs/"><img src="https://s2.loli.net/2022/04/19/WGaeHThBL1PlRfi.png" width="200" height="200" alt="go-cqhttp"></a>
+  <a href="https://ishkong.github.io/go-cqhttp-docs/"><img src="https://s2.loli.net/2022/04/19/VxkCUtHl5Sa2zgb.png" width="200" height="200" alt="go-cqhttp"></a>
 </p>
 
 <div align="center">
