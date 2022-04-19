@@ -6,7 +6,7 @@
 
 # 澪酱-你的生活小助手
 
-_✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[MiraiGo-Template](https://github.com/Logiase/MiraiGo-Template)模块化的开发方式 ✨_
+_✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[MiraiGo-Template](https://github.com/Logiase/MiraiGo-Template)模块化开发 ✨_
 
 </div>
 
