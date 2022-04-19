@@ -12,12 +12,12 @@ _✨ 基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)，使用[MiraiGo-Tem
 
 <p align="center">
   <a href="#">
-    <img src="https://img.shields.io/badge/go-v1.17.8-green" alt="license">
+    <img src="https://img.shields.io/badge/go-v1.17.8-blue" alt="license">
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/release-v0.0.1-orange" alt="release">
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/LICENSE-MIT-orange" alt="action">
+    <img src="https://img.shields.io/badge/LICENSE-AGPL--3.0-red" alt="action">
   </a>
 </p>
