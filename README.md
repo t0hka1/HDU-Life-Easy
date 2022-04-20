@@ -35,9 +35,9 @@ MiraiGo-MioBot是对MiraiGo-Template的模块化编程的一次拓展实践，�
 
 ```yaml
 bot:
-  loginmethod: qrcode
-  account: ""
-  password: ""
+  loginmethod: common
+  account: "xxxx"
+  password: "xxxx"
 ```
 
 **homework.yaml** - 作业记录
