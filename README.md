@@ -58,7 +58,35 @@ bot:
 **device.json** - 设备信息
 
 ```json
-{"display":"MIRAI.156311.001","product":"mirai","device":"mirai","board":"mirai","model":"mirai","finger_print":"mamoe/mirai/mirai:10/MIRAI.200122.001/6611562:user/release-keys","boot_id":"11afc12f-e067-95ab-03d0-7a59f3c25218","proc_version":"Linux version 3.0.31-IAD5IDEb (android-build@xxx.xxx.xxx.xxx.com)","protocol":5,"imei":"250346797735787","brand":"mamoe","bootloader":"unknown","base_band":"","version":{"incremental":"5891938","release":"10","codename":"REL","sdk":29},"sim_info":"T-Mobile","os_type":"android","mac_address":"00:50:56:C0:00:08","ip_address":[10,0,1,3],"wifi_bssid":"00:50:56:C0:00:08","wifi_ssid":"\u003cunknown ssid\u003e","imsi_md5":"19773e595e92e49b21707c08cfa4e565","android_id":"65684d724991464f","apn":"wifi","vendor_name":"MIUI","vendor_os_name":"mirai"}
+{
+    "deviceInfoVersion": 2,
+    "data": {
+        "display": "MIRAI.122049.001",
+        "product": "mirai",
+        "device": "mirai",
+        "board": "mirai",
+        "brand": "mamoe",
+        "model": "mirai",
+        "bootloader": "unknown",
+        "fingerprint": "mamoe/mirai/mirai:10/MIRAI.200122.001/7920156:user/release-keys",
+        "bootId": "0D82CD7D-5374-4114-0895-9DAE975A73A4",
+        "procVersion": "Linux version 3.0.31-DQT5fG8j (android-build@xxx.xxx.xxx.xxx.com)",
+        "baseBand": "",
+        "version": {
+            "incremental": "5891938",
+            "release": "10",
+            "codename": "REL"
+        },
+        "simInfo": "T-Mobile",
+        "osType": "android",
+        "macAddress": "02:00:00:00:00:00",
+        "wifiBSSID": "02:00:00:00:00:00",
+        "wifiSSID": "<unknown ssid>",
+        "imsiMd5": "1a96e96c57a5e852ce2e3914053d80a8",
+        "imei": "501626370810761",
+        "apn": "wifi"
+    }
+}
 ```
 
 运行二进制文件即可
