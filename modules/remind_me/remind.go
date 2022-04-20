@@ -6,7 +6,6 @@ import (
 	"github.com/Mrs4s/MiraiGo/client"
 	"github.com/Mrs4s/MiraiGo/message"
 	"gopkg.in/yaml.v2"
-	"github.com/robfig/cron/v3"
 )
 var logger = utils.GetModuleLogger("t0hka.autoreply")
 
