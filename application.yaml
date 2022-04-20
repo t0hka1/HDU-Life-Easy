@@ -1,4 +1,4 @@
 bot:
-  loginmethod: qrcode
-  account: ""
-  password: ""
+  loginmethod: common
+  account: "xxxx"
+  password: "xxxx"
