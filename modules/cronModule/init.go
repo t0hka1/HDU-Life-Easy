@@ -1,9 +1,7 @@
 package cronModule
 
-
 import (
 	"github.com/Logiase/MiraiGo-Template/bot"
-	"github.com/robfig/cron/v3"
 	"sync"
 )
 
@@ -37,11 +35,7 @@ func (m *cronModule) PostInit() {
 
 func (m *cronModule) Serve(b *bot.Bot) {
 	// 注册服务函数部分
-	c:=cron.Cron{}
-	//每分钟执行一次
-	c.AddFunc("@1m", func() {
-		b.OnPrivateMessage(Reminder)
-	})
+	b.OnPrivateMessage(Reminder)
 }
 
 func (m *cronModule) Start(b *bot.Bot) {
