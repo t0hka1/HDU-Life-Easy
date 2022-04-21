@@ -1,9 +1,9 @@
 package cronModule
 
 import (
+	"github.com/Logiase/MiraiGo-Template/bot"
 	"github.com/Logiase/MiraiGo-Template/config"
 	"github.com/Logiase/MiraiGo-Template/utils"
-	"github.com/Mrs4s/MiraiGo/client"
 	"github.com/Mrs4s/MiraiGo/message"
 	"gopkg.in/yaml.v2"
 )
@@ -11,12 +11,8 @@ import (
 
 var logger = utils.GetModuleLogger("t0hka.cronModule")
 
-func Reminder(client *client.QQClient,msg *message.PrivateMessage){
-	//实现一个清单，记录作业情况
-	// 支持主动提醒(定时通知)和被动提醒(自己询问)
-	reply:=query()
-	client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText("cron success！")))
-	client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText(reply)))
+func Remind(b *bot.Bot)  {
+	b.SendPrivateMessage(1263183073, message.NewSendingMessage().Append(message.NewText(query())))
 }
 
 func query() string{

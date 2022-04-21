@@ -2,7 +2,6 @@ package cronModule
 
 import (
 	"github.com/Logiase/MiraiGo-Template/bot"
-	"github.com/Mrs4s/MiraiGo/message"
 	"github.com/robfig/cron/v3"
 	"sync"
 )
@@ -40,7 +39,7 @@ func (m *cronModule) PostInit() {
 func (m *cronModule) Serve(b *bot.Bot) {
 	// 注册服务函数部分
 	if _,err :=m.cron.AddFunc("@every 2m", func() {
-		b.SendPrivateMessage(1263183073, message.NewSendingMessage().Append(message.NewText("每两分钟执行一次")))
+		Remind(b)
 	});err != nil {
 		panic(err)
 	}
