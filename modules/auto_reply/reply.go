@@ -34,17 +34,13 @@ func Reply(qqclient *client.QQClient,msg *message.PrivateMessage)  {
 				logger.WithError(err).Error("close rows error")
 			}
 		}(rows)
-		for rows.Next(){
-			println("I am here")
-			//var keyword string
+		for rows.Next(){ //var keyword string
 			var answer string
 			err=rows.Scan(&answer)
-			println(err)
 			if err!=nil{
 				logger.WithError(err).Error("scan error")
 				return
 			}
-			println(answer)
 			answer1:=message.NewSendingMessage().Append(message.NewText(answer))
 			qqclient.SendPrivateMessage(msg.Sender.Uin,answer1)
 		}

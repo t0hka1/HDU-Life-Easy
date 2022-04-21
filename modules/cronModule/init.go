@@ -38,7 +38,7 @@ func (m *cronModule) PostInit() {
 
 func (m *cronModule) Serve(b *bot.Bot) {
 	// 注册服务函数部分
-	if _,err :=m.cron.AddFunc("@every 2m", func() {
+	if _,err :=m.cron.AddFunc("@every 3h", func() {
 		Remind(b)
 	});err != nil {
 		panic(err)

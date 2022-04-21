@@ -12,7 +12,6 @@ var logger = utils.GetModuleLogger("t0hka.autoreply")
 func Reminder(client *client.QQClient,msg *message.PrivateMessage){
 	//实现一个清单，记录作业情况
 	// 支持主动提醒(定时通知)和被动提醒(自己询问)
-	println("I come here!")
 	if msg.ToString()=="作业" || msg.ToString()=="homework"{
 		reply:=query()
 		client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText(reply)))
