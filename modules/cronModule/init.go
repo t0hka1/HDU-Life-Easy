@@ -2,6 +2,7 @@ package cronModule
 
 import (
 	"github.com/Logiase/MiraiGo-Template/bot"
+	"github.com/robfig/cron/v3"
 	"sync"
 )
 
@@ -11,6 +12,7 @@ func init()  {
 }
 
 type cronModule struct {
+	cron *cron.Cron
 }
 
 
@@ -25,6 +27,7 @@ func (m *cronModule) Init()  {
 	// 初始化过程
 	// 在此处可以进行 Module 的初始化配置
 	// 如配置读取
+	m.cron = cron.New()
 }
 
 func (m *cronModule) PostInit() {
@@ -35,7 +38,13 @@ func (m *cronModule) PostInit() {
 
 func (m *cronModule) Serve(b *bot.Bot) {
 	// 注册服务函数部分
-	b.OnPrivateMessage(Reminder)
+	if _,err :=m.cron.AddFunc("@every 2m", func() {
+		b.OnPrivateMessage(Reminder)
+	});err != nil {
+		panic(err)
+	}
+	m.cron.Start()
+	//b.OnPrivateMessage(Reminder)
 }
 
 func (m *cronModule) Start(b *bot.Bot) {

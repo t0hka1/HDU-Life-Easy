@@ -5,9 +5,7 @@ import (
 	"github.com/Logiase/MiraiGo-Template/utils"
 	"github.com/Mrs4s/MiraiGo/client"
 	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/robfig/cron/v3"
 	"gopkg.in/yaml.v2"
-
 )
 
 
@@ -16,15 +14,9 @@ var logger = utils.GetModuleLogger("t0hka.cronModule")
 func Reminder(client *client.QQClient,msg *message.PrivateMessage){
 	//实现一个清单，记录作业情况
 	// 支持主动提醒(定时通知)和被动提醒(自己询问)
-	c:=cron.New()
-	_, err := c.AddFunc("@every 1m", func() {
-		reply:=query()
-		client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText("cron success！")))
-		client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText(reply)))
-	})
-	if err != nil {
-		return
-	}
+	reply:=query()
+	client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText("cron success！")))
+	client.SendPrivateMessage(msg.Sender.Uin,message.NewSendingMessage().Append(message.NewText(reply)))
 }
 
 func query() string{
