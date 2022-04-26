@@ -13,7 +13,7 @@ import (
 	_ "github.com/Logiase/MiraiGo-Template/modules/logging"
 	_ "github.com/Logiase/MiraiGo-Template/modules/remind_me"
 	_ "github.com/Logiase/MiraiGo-Template/modules/self_learn"
-	_ "github.com/Logiase/MiraiGo-Template/modules/sklKiller"
+	_ "github.com/Logiase/MiraiGo-Template/modules/skl_killer"
 )
 
 func init() {
